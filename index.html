@@ -26,12 +26,13 @@
         @mouseover="autoPlay(false)"
         @mouseleave="autoPlay(true)"
       >
-        <img :src="movie[activeImage]" alt="" />
+        <div class="description">{{movie[activeImage].description}}</div>
+        <img :src="movie[activeImage].image" alt="" />
 
         <div class="thumbnail">
           <img
-            v-for="(img, index) in movie"
-            :src="img"
+            v-for="(poster, index) in movie"
+            :src="poster.image"
             alt=""
             @click="activeImage = index"
             :class="activeImage == index ? 'active' : ''"

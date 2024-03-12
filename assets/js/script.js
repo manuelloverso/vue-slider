@@ -6,11 +6,26 @@ createApp({
       isPlaying: true,
       activeImage: 0,
       movie: [
-        "./assets/img/01.jpg",
-        "./assets/img/02.jpg",
-        "./assets/img/03.jpg",
-        "./assets/img/04.jpg",
-        "./assets/img/05.jpg",
+        {
+          description: `Random description of the first picture`,
+          image: "./assets/img/01.jpg",
+        },
+        {
+          description: "Random description of the second picture",
+          image: "./assets/img/02.jpg",
+        },
+        {
+          description: "Random description of the third picture",
+          image: "./assets/img/03.jpg",
+        },
+        {
+          description: "Random description of the fourth picture",
+          image: "./assets/img/04.jpg",
+        },
+        {
+          description: "Random description of the fifth picture",
+          image: "./assets/img/05.jpg",
+        },
       ],
     };
   },

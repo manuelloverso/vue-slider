@@ -11,10 +11,20 @@ body {
 .container {
   max-width: 900px;
   position: relative;
+  box-shadow: rgb(213, 78, 15) 0 0 40px 0px;
 
   & > img {
     width: 100%;
     display: block;
+  }
+
+  .description {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.642);
+    color: white;
+    padding: 10px;
   }
 
   .thumbnail {
@@ -48,6 +58,7 @@ body {
     border-radius: 50%;
     background-color: #ffffff;
     transition: width 0.1s;
+    box-shadow: black 0 0 13px 3px;
   }
 
   .prev:hover {
