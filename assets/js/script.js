@@ -7,3 +7,5 @@ createApp({
     };
   },
 }).mount("#app");
+
+console.log("hello world");

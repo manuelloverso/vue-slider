@@ -976,6 +976,10 @@
 /* #endregion FONT */
 
 /* #region WIDTHS HEIGHTS */
+.vw-100 {
+  width: 100vw;
+}
+
 .w-100 {
   width: 100%;
 }
@@ -1014,6 +1018,10 @@
 
 .w-10 {
   width: 10%;
+}
+
+.vh-100 {
+  height: 100vh;
 }
 
 .h-100 {
