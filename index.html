@@ -11,7 +11,15 @@
     <title>Vue Slider</title>
   </head>
   <body class="d-flex vh-100 justify-center align-center">
-    <div id="app">{{message}}</div>
+    <div id="app">
+      <div class="container">
+        <img :src="movie[0]" alt="" />
+
+        <div class="thumbnail">
+          <img v-for="img in movie" :src="img" alt="" />
+        </div>
+      </div>
+    </div>
     <!-- JS Links -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="./assets/js/script.js"></script>

@@ -7,3 +7,27 @@
 body {
   background-color: black;
 }
+
+.container {
+  max-width: 900px;
+  position: relative;
+
+  & > img {
+    width: 100%;
+    display: block;
+  }
+
+  .thumbnail {
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    & img {
+      display: block;
+      width: 100%;
+      height: calc(100% / 5);
+    }
+  }
+}
