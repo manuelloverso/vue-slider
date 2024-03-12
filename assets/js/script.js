@@ -29,15 +29,17 @@ createApp({
       }
     },
 
-    autoPlay() {
-      this.activeImage++;
-      if (this.activeImage >= this.movie.length) {
-        this.activeImage = 0;
+    autoPlay(boolean) {
+      let isPlaying;
+      if (boolean == true) {
+        isPlaying = setInterval(this.nextBtn, 2000);
+      } else {
+        clearInterval(isPlaying);
       }
     },
   },
 
   mounted() {
-    setInterval(this.autoPlay, 3000);
+    this.autoPlay(true);
   },
 }).mount("#app");
