@@ -28,12 +28,20 @@ body {
       display: block;
       width: 100%;
       height: calc(100% / 5);
+      cursor: pointer;
     }
   }
 
   .prev,
   .next {
+    font-size: 1.2rem;
+    cursor: pointer;
     position: absolute;
+    width: 50px;
+    aspect-ratio: 1;
+    border: none;
+    border-radius: 50%;
+    background-color: #ffffff;
   }
 
   .prev {

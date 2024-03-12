@@ -3,6 +3,7 @@ const { createApp } = Vue;
 createApp({
   data() {
     return {
+      isPlaying: true,
       activeImage: 0,
       movie: [
         "./assets/img/01.jpg",
@@ -30,16 +31,15 @@ createApp({
     },
 
     autoPlay(boolean) {
-      let isPlaying;
       if (boolean == true) {
-        isPlaying = setInterval(this.nextBtn, 2000);
+        this.isPlaying = setInterval(this.nextBtn, 2000);
       } else {
-        clearInterval(isPlaying);
+        clearInterval(this.isPlaying);
       }
     },
   },
 
   mounted() {
-    this.autoPlay(true);
+    this.autoPlay(this.isPlaying);
   },
 }).mount("#app");
