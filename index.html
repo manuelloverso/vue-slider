@@ -13,10 +13,16 @@
   <body class="d-flex vh-100 justify-center align-center">
     <div id="app">
       <div class="container">
-        <img :src="movie[0]" alt="" />
+        <img :src="movie[activeImage]" alt="" />
 
         <div class="thumbnail">
-          <img v-for="img in movie" :src="img" alt="" />
+          <img
+            v-for="(img, index) in movie"
+            :src="img"
+            alt=""
+            @click="activeImage = index"
+            :class="activeImage == index ? 'active' : ''"
+          />
         </div>
       </div>
     </div>
