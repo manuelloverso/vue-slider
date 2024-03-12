@@ -24,6 +24,9 @@
             :class="activeImage == index ? 'active' : ''"
           />
         </div>
+
+        <button @click="previousBtn()" class="prev">previous</button>
+        <button @click="nextBtn()" class="next">next</button>
       </div>
     </div>
     <!-- JS Links -->

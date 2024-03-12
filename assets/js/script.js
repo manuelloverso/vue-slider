@@ -13,4 +13,20 @@ createApp({
       ],
     };
   },
+
+  methods: {
+    previousBtn() {
+      this.activeImage--;
+      if (this.activeImage < 0) {
+        this.activeImage = this.movie.length - 1;
+      }
+    },
+
+    nextBtn() {
+      this.activeImage++;
+      if (this.activeImage >= this.movie.length) {
+        this.activeImage = 0;
+      }
+    },
+  },
 }).mount("#app");

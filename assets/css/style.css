@@ -30,4 +30,21 @@ body {
       height: calc(100% / 5);
     }
   }
+
+  .prev,
+  .next {
+    position: absolute;
+  }
+
+  .prev {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .next {
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, +50%);
+  }
 }
