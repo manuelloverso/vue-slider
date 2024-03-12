@@ -28,5 +28,16 @@ createApp({
         this.activeImage = 0;
       }
     },
+
+    autoPlay() {
+      this.activeImage++;
+      if (this.activeImage >= this.movie.length) {
+        this.activeImage = 0;
+      }
+    },
+  },
+
+  mounted() {
+    setInterval(this.autoPlay, 3000);
   },
 }).mount("#app");
